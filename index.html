@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我</title>
+    <link rel="stylesheet" type="text/css" href="dean.css">
+</head>
+<body id="main">
+<form action="index.html" method="post">
+<!--    <div id="left">-->
+<!--        <table id="table_t">-->
+<!--            <tr>-->
+<!--                <td rowspan="2"> <img class="circleImg" src="img/ic_evermore.jpg" width="10%" height="10%"></td>-->
+<!--                <td style="font-size: 20px;font-family: STHeiti; color: floralwhite">&nbsp;&nbsp;衬衫的价格</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td style="font-size: 10px;float:left;color: #A8A8A8 ">&nbsp;&nbsp;&nbsp;&nbsp;20193250</td>-->
+<!--            </tr>-->
+<!--        </table>-->
+<!--        </hr>-->
+<!--        <ul class="ul">-->
+<!--            <li><a href="index.html"><table><tr><td><img src="img/home.png" width="30px" height="30px"></td><td>  我的主页</td></tr></table></a></li>-->
+<!--            <li><a href="blog.html"><table><tr><td><img src="img/blog.png" width="30px" height="30px"></td><td>  我的博客</td></tr></table></a></li>-->
+<!--            <li><a href="active.html"><table><tr><td><img src="img/active.png" width="30px" height="30px"></td><td>  我的动态</td></tr></table></a></li>-->
+<!--            <li><a class="active" href="getData.html"><table><tr><td><img src="img/me.jpg" width="30px" height="30px"></td><td> 关于我</td></tr> </table></a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+    <div id="right" >
+        <div id="right_in_top">
+            <p style="margin-left: 10px">温馨提示：</br>
+                欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用xx.com网站的各种工具和服务。
+                本服务协议双方为xx与xx网用户，本服务协议具有合同效力。
+                xx的权利和义务
+                1.xx有义务在现有技术上维护整个网上交易平台的正常运行，并努力提升和改进技术，使用户网上交易活动的顺利。
+                2.对用户在注册使用xx网上交易平台中所遇到的与交易或注册有关的问题及反映的情况，xx应及时作出回复。
+                3.对于在xx网网上交易平台上的不当行为或其它任何xx认为应当终止服务的情况，xx有权随时作出删除相关信息、终止服务提供等处理，而无须征得用户的同意。
+                4.因网上交易平台的特殊性，xx没有义务对所有用户的注册资料、所有的交易行为以及与交易有关的其他事项进行事先审查。
+            </p>
+        </div>
+        <div id="right_in_right">
+            <img width="600" height="250" src="img/style.gif">
+        </div>
+        <div id="right_in">
+            <table cellspacing="0" cellpadding="0">
+                <tr >
+                    <td class="fang">
+                        姓&emsp;&emsp;名：<input id="name" type="text" style="border: none ; outline: none" readonly="readonly" value="张雨轩">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fang">
+                        性&emsp;&emsp;别：<input type=text" name="gender"style="border: none ; outline: none" id="gender" value="男" readonly="readonly"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fang">
+                        爱&emsp;&emsp;好：<input type="text" name="hobby"style="border: none ; outline: none"  id="hobby" value="吃饭，睡觉，打豆豆" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fang">
+                        所在院系：<input type="text" name="sdept" id="sdept" style="border: none ; outline: none" value="信息学院" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fang">
+                        所学专业：<input type="text" name="major" id="major" style="border: none ; outline: none" value="软件工程" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fang">
+                        联系方式：<input type="text" name="phone" id="phone" style="border: none ; outline: none" value="15732930928" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fang">
+                        出生日期：<input type="text" id="birthday"  value="2002年02月06日"  style="border: none ; outline: none"  readonly/>
+                    </td>
+                </tr>
+
+                <tr style="height: 100px">
+                    <td>
+                       <a class="a" href="aboutme.html">填写个人信息</a>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="box-shadow: 0 5px 10px -5px #888888;" id="right_top">
+        <table  cellspacing="5px">
+            <tr>
+                <td style="font-size: 20px" width="1300px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于我♪(^∇^*)</td>
+                <td class="circle"><a href="https://www.cnblogs.com/yuxuan-light-of-Taihu-Lake/">
+                    <img src="img/bokeyuan.png" width="20px" height="20px">&nbsp;&nbsp;博客园</a></td>
+                <td class="circle" ><a href="https://github.com/Elliot-Zhangyx"> <img  src="img/github.png" width="20px" height="20px">&nbsp;&nbsp;GitHub</a></td>
+                <td class="circle"><a href="https://www.bilibili.com/"> <img  src="img/bilibili.png" width="20px" height="20px">&nbsp;&nbsp;bilibili</a></td>
+            </tr>
+        </table>
+    </div>
+</form>
+</body>
+<script>
+            if(window.localStorage.getItem("flag")=="1") {
+                document.getElementById("name").value = window.localStorage.getItem("name");
+                document.getElementById("gender").value = window.localStorage.getItem("gender");
+                document.getElementById("hobby").value = window.localStorage.getItem("hobby");
+                document.getElementById("phone").value = window.localStorage.getItem("phone");
+                document.getElementById("birthday").value = window.localStorage.getItem("birthday");
+                document.getElementById("sdept").value = window.localStorage.getItem("sdept");
+                document.getElementById("major").value = window.localStorage.getItem("major");
+            }
+                var t = null;
+                t = setTimeout(time,1000);//开始执行
+                function time()
+                {
+                    clearTimeout(t);//清除定时器
+                    dt = new Date();
+                    var y=dt.getYear()+1900;
+                    var mm=dt.getMonth()+1;
+                    var d=dt.getDate();
+                    var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+                    var day=dt.getDay();
+                    var h=dt.getHours();
+                    var m=dt.getMinutes();
+                    var s=dt.getSeconds();
+                    if(h<10){h="0"+h;}
+                    if(m<10){m="0"+m;}
+                    if(s<10){s="0"+s;}
+                    document.getElementById("timeShow").innerHTML =  y+"年"+mm+"月"+d+"日"+weekday[day]+""+h+":"+m+":"+s+"";
+                    t = setTimeout(time,1000); //设定定时器，循环执行
+</script>
+</html>
